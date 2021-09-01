@@ -1,0 +1,97 @@
+@import "reset.css";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* 화면 정중앙 배치 */
+}
+
+.clock {
+    color: #fff;
+}
+
+.clock h1 {
+    font-size: 100px;
+    font-weight: 600;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+
+    padding-bottom: 30px;
+}
+
+.toDoList {
+    color: #fff;
+}
+
+.toDoList h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.toDoList-form input {
+    color: #fff;
+    padding: 20px 260px ;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    background: transparent;
+}
+
+.toDoList-form input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.toDoList-form input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.toDoList-ul {}
+
+.toDoList-ul li:first-child {
+    margin-top: 20px;
+}
+
+.toDoList-ul li {
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.said {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.said-h1 {
+    font-size: 23px;
+    font-weight: 600;
+}
