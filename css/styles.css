@@ -95,3 +95,14 @@ body {
     font-size: 23px;
     font-weight: 600;
 }
+
+.weather {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 50px 50px
+}
+
+.weather-info {
+    font-size: 30px;
+}

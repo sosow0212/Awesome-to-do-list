@@ -1,4 +1,4 @@
-const weather = document.querySelector(".js-weather");
+const weather = document.querySelector(".weather-info");
 
 const API_KEY = "a00f4745e02313bcf16fd46139e6446d"; // api키
 //weather API 받는 사이트: https://openweathermap.org/
@@ -10,7 +10,8 @@ function getWeather(lat, lng) { // api 활용
     }).then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${place} 
+        ${temperature.toFixed(1)}℃`;
     });
 } 
 
